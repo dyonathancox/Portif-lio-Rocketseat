@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+
+    font-family: "Asap", sans-serif;
+    font-family: "Inconsolata", monospace;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    color: var(--gray-500);
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 5.6rem;
+    border: .2rem solid var(--red);
+    padding: .4rem;
+}
+
+.top {
+    width: 68rem;
+    text-align: center;
+
+}
+
+.top h1 {
+    font-size: 5.6rem;
+    margin: .8rem 0 2rem;
+    color: var(--gray-600);
+}
+
+.top p,
+main h2  {
+    font-size: 2rem;
+    line-height: 120%;
+    font-family: "Inconsolata", monospace;
+}
+
+.top strong {
+    color: var(--red);
+}
+
+.grupo-2 {
+    width: 68rem;
+}
+
+.grupo-2 p {
+    font-size: 1.4rem;
+    font-family: "Maven Pro", sans-serif;
+    color: var(--gray-400);
+}
+
+.cards-tecno {
+    margin-top: 8rem;
+    display: flex;
+    place-content: center;
+    gap: 2rem;
+}
+
+.tecno {
+    width: 100%;
+    border-radius: 9rem;
+    background-color: var(--gray-300);
+    font-size: 1.6rem;
+    padding: .9rem 1.6rem;
+    display: flex;
+    place-content: center;
+    gap: .8rem;
+    border: 0.2rem solid transparent; 
+    transition: border .5s ease;
+}
+
+.tecno i {
+    font-size: 2.4rem;
+}
+.tecno:hover{
+    border: .2rem solid var(--gray-400);
+}
+.arrow {
+    margin: 9.4rem auto;
+    display: flex;
+    place-content: center;
+}
+
+/*MAIN*/
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--gray-200);
+}
+.works{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.4rem;
+}
+#work h2{
+    margin-top: 7rem;
+    color: var(--red);
+}
+#work h1{
+    font-size: 2.4rem;
+    color: var(--gray-600);
+}
+.works {
+    max-width: 102.4rem;
+    margin: 5.6rem auto;
+}
+
+.card{
+    width: 33rem;
+    height: auto;
+    background-color: var(--gray-300);
+    border-radius: 1.2rem;
+    padding: 1.2rem 1.2rem 2rem;
+    box-sizing: border-box;
+    border: 0.2rem solid transparent; 
+    transition: border .5s ease;
+}
+.card img{
+    width: 30rem;
+    height: 15rem;
+    border-radius: .8rem;
+}
+
+.card h3{
+    font-size: 1.6rem;
+    text-align: left;
+    color: var(--gray-600);
+    margin: 2.4rem .8rem;
+}
+.card p{
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--gray-500);
+    line-height: 140%;
+    font-family: "Maven Pro", sans-serif;
+}
+.card:hover{
+    border: .2rem solid var(--gray-500);
+}
+
+/*SERVICES*/
+.services{
+    width: 100%;
+    background-color: var(--gray-100);
+}
+.serv{
+    width: 102.4rem;
+    margin: 5.6rem auto 12rem;
+    display: flex;
+    place-content: center;
+    gap: 2.4rem;
+}
+.services span{
+    width: 28rem;
+    height: 15rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    border: .2rem solid var(--gray-200);
+    border-radius: 1.2rem;
+    list-style: none;
+    padding: 2.5rem;
+}
+.services img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.services strong{
+    font-size: 1.6rem;
+    color: var(--gray-600);
+}
+.services p{
+    margin-top: .8rem;
+    font-size: 1.6rem;
+    color: var(--gray-500);
+}
+
+/*FOOTER*/
+
+footer {
+    color: var(--gray-500);
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/bg-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h1{
+    font-size: 2.4rem;
+    margin: .8rem 0;
+    color: var(--gray-600);
+}
+footer h3{
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-family: "Inconsolata", monospace;
+    line-height: 120%;
+    color: var(--purple);
+}
+footer p{
+    color: var(--gray-500);
+    margin-bottom: 4.8rem;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.btns button{
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    font-size: 1.6rem;
+    font-family: "Maven Pro", sans-serif;
+    padding: 2.3rem 2rem;
+    border-radius: .8rem;
+    border: 0.1rem solid transparent; 
+    text-align: left;
+    cursor: pointer;
+    background-color: var(--gray-300);
+    color: var(--gray-500);
+    transition: border .5s ease;
+}
+
+.btns button .fa-brands{
+    font-size: 2.4rem;
+    margin-right: 1.2rem;
+    color: var(--purple);
+}
+.btns button .fa-chevron-right{
+    font-size: 1.6rem;
+    margin-left: 26rem;
+    color: var(--purple);
+}
+.btns button:hover{
+    border: .1rem solid var(--purple);
+}
