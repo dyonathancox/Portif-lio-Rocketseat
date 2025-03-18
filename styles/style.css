@@ -46,13 +46,13 @@ header {
 .perfil {
     width: 12rem;
     border-radius: 50%;
-    margin-bottom: 5.6rem;
+    margin: 12rem 0 5.6rem;
     border: .2rem solid var(--red);
     padding: .4rem;
 }
 
 .top {
-    width: 68rem;
+    width: 70rem;
     text-align: center;
 
 }
@@ -64,7 +64,7 @@ header {
 }
 
 .top p,
-main h2  {
+main h2 {
     font-size: 2rem;
     line-height: 120%;
     font-family: "Inconsolata", monospace;
@@ -100,16 +100,18 @@ main h2  {
     display: flex;
     place-content: center;
     gap: .8rem;
-    border: 0.2rem solid transparent; 
+    border: 0.2rem solid transparent;
     transition: border .5s ease;
 }
 
 .tecno i {
     font-size: 2.4rem;
 }
-.tecno:hover{
+
+.tecno:hover {
     border: .2rem solid var(--gray-400);
 }
+
 .arrow {
     margin: 9.4rem auto;
     display: flex;
@@ -117,79 +119,88 @@ main h2  {
 }
 
 /*MAIN*/
-main{
+#work {
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: var(--gray-200);
 }
-.works{
+
+.works {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2.4rem;
 }
-#work h2{
-    margin-top: 7rem;
+
+#work h2 {
+    padding-top: 4rem;
     color: var(--red);
 }
-#work h1{
+
+#work h1 {
     font-size: 2.4rem;
     color: var(--gray-600);
 }
+
 .works {
     max-width: 102.4rem;
-    margin: 5.6rem auto;
+    height: 100vh;
+    margin: 4.8rem auto;
 }
 
-.card{
+.card {
     width: 33rem;
-    height: auto;
     background-color: var(--gray-300);
     border-radius: 1.2rem;
     padding: 1.2rem 1.2rem 2rem;
     box-sizing: border-box;
-    border: 0.2rem solid transparent; 
+    border: 0.2rem solid transparent;
     transition: border .5s ease;
 }
-.card img{
+
+.card img {
     width: 30rem;
     height: 15rem;
     border-radius: .8rem;
 }
 
-.card h3{
+.card h3 {
     font-size: 1.6rem;
     text-align: left;
     color: var(--gray-600);
     margin: 2.4rem .8rem;
 }
-.card p{
+
+.card p {
     font-size: 1.4rem;
     text-align: left;
     color: var(--gray-500);
     line-height: 140%;
     font-family: "Maven Pro", sans-serif;
 }
-.card:hover{
+
+.card:hover {
     border: .2rem solid var(--gray-500);
 }
 
 /*SERVICES*/
-.services{
+.services {
     width: 100%;
     background-color: var(--gray-100);
 }
-.serv{
+
+.serv {
     width: 102.4rem;
     margin: 5.6rem auto 12rem;
     display: flex;
     place-content: center;
     gap: 2.4rem;
 }
-.services span{
+
+.services span {
     width: 28rem;
     height: 15rem;
     text-align: left;
@@ -201,17 +212,19 @@ main{
     list-style: none;
     padding: 2.5rem;
 }
-.services img{
+
+.services img {
     width: 4rem;
     height: 4rem;
     margin-bottom: 2rem;
 }
 
-.services strong{
+.services strong {
     font-size: 1.6rem;
     color: var(--gray-600);
 }
-.services p{
+
+.services p {
     margin-top: .8rem;
     font-size: 1.6rem;
     color: var(--gray-500);
@@ -220,9 +233,9 @@ main{
 /*FOOTER*/
 
 footer {
-    color: var(--gray-500);
-    width: 100%;
     height: 100vh;
+
+    color: var(--gray-500);
     background-image: url(../assets/bg-2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -232,29 +245,33 @@ footer {
     align-items: center;
     justify-content: center;
 }
-footer h1{
+
+footer h1 {
     font-size: 2.4rem;
     margin: .8rem 0;
     color: var(--gray-600);
 }
-footer h3{
-    margin-top: 10rem;
+
+footer h3 {
     font-size: 2rem;
     font-family: "Inconsolata", monospace;
     line-height: 120%;
     color: var(--purple);
 }
-footer p{
+
+footer p {
+    font-size: 1.6rem;
     color: var(--gray-500);
     margin-bottom: 4.8rem;
 }
-.btns{
+
+.btns {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 }
 
-.btns button{
+.btns button {
     display: flex;
     align-items: center;
     width: 40rem;
@@ -262,7 +279,7 @@ footer p{
     font-family: "Maven Pro", sans-serif;
     padding: 2.3rem 2rem;
     border-radius: .8rem;
-    border: 0.1rem solid transparent; 
+    border: 0.1rem solid transparent;
     text-align: left;
     cursor: pointer;
     background-color: var(--gray-300);
@@ -270,16 +287,30 @@ footer p{
     transition: border .5s ease;
 }
 
-.btns button .fa-brands{
+.btns button a {
+    width: 30rem;
+    text-decoration: none;
+    color: var(--gray-500);
+    margin-right: 5rem;
+}
+
+.btns button .fa-brands,
+.fa-at {
     font-size: 2.4rem;
     margin-right: 1.2rem;
-    color: var(--purple);
 }
-.btns button .fa-chevron-right{
+
+.btns button .fa-chevron-right {
     font-size: 1.6rem;
-    margin-left: 26rem;
+}
+
+.btns button:hover a,
+.btns button:hover .fa-at,
+.btns button:hover .fa-brands,
+.btns button:hover .fa-chevron-right {
     color: var(--purple);
 }
-.btns button:hover{
+
+.btns button:hover {
     border: .1rem solid var(--purple);
 }
